@@ -1,0 +1,45 @@
+@mixin button() {
+	background: transparent;
+	color: $off-white;
+	border: 3px solid $off-white !important;
+
+	&:hover,
+	&:active,
+	&:focus {
+		background: $green !important;
+	}
+
+	&.active {
+		background: $green;
+	}
+}
+
+button,
+.button,
+.vex-dialog-button {
+	@include button();
+}
+
+.vex-dialog-button {
+	background: transparent !important;
+}
+
+@keyframes pulse-alert {
+	0% {
+		background: $orange;
+	}
+
+	100% {
+		background: $red;
+	}
+}
+
+@keyframes pulse-warning {
+	0% {
+		background: $yellow;
+	}
+
+	100% {
+		background: darken($yellow, 5%);
+	}
+}

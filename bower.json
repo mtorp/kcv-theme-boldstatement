@@ -1,0 +1,24 @@
+{
+  "name": "jsonresume-theme-boldstatement",
+  "version": "0.1.0",
+  "authors": [
+    "Tyler Thompson <tyler@tylerpaulthompson.com>"
+  ],
+  "description": "Make a bold statement with this JSON Resume theme.",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "private": false,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "modernizr": "*",
+    "modular-scale": "*"
+  }
+}

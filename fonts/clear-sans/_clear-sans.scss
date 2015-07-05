@@ -1,0 +1,108 @@
+/*!
+ * Clear Sans Webfont
+ *
+ * Webfont conversion of the Clear Sans typeface, designed by the
+ * Intel Open Source Technology Center <https://01.org/clear-sans>
+ *
+ * Original font file released under the Apache 2.0 License
+ * <http://www.apache.org/licenses/LICENSE-2.0.html>
+ *
+ * Webfont version by Resi Respati <resir014@gmail.com>
+ * Released under the MIT License.
+ */
+
+@font-face {
+    font-family: 'Clear Sans';
+    font-style: normal;
+    font-weight: 100;
+    src: local('ClearSans-Thin'), local('Clear Sans Thin'),
+         url('../fonts/clear-sans/ClearSans-Thin.eot'),
+         url('../fonts/clear-sans/ClearSans-Thin.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/clear-sans/ClearSans-Thin.woff') format('woff'),
+         url('../fonts/clear-sans/ClearSans-Thin.ttf') format('truetype'),
+         url('../fonts/clear-sans/ClearSans-Thin.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Clear Sans';
+    font-style: normal;
+    font-weight: 300;
+    src: local('ClearSans-Light'), local('Clear Sans Light'),
+         url('../fonts/clear-sans/ClearSans-Light.eot'),
+         url('../fonts/clear-sans/ClearSans-Light.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/clear-sans/ClearSans-Light.woff') format('woff'),
+         url('../fonts/clear-sans/ClearSans-Light.ttf') format('truetype'),
+         url('../fonts/clear-sans/ClearSans-Light.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Clear Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: local('ClearSans'), local('Clear Sans'),
+         url('../fonts/clear-sans/ClearSans-Regular.eot'),
+         url('../fonts/clear-sans/ClearSans-Regular.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/clear-sans/ClearSans-Regular.woff') format('woff'),
+         url('../fonts/clear-sans/ClearSans-Regular.ttf') format('truetype'),
+         url('../fonts/clear-sans/ClearSans-Regular.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Clear Sans';
+    font-style: italic;
+    font-weight: 400;
+    src: local('ClearSans-Italic'), local('Clear Sans Italic'),
+         url('../fonts/clear-sans/ClearSans-Italic.eot'),
+         url('../fonts/clear-sans/ClearSans-Italic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/clear-sans/ClearSans-Italic.woff') format('woff'),
+         url('../fonts/clear-sans/ClearSans-Italic.ttf') format('truetype'),
+         url('../fonts/clear-sans/ClearSans-Italic.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Clear Sans';
+    font-style: normal;
+    font-weight: 500;
+    src: local('ClearSans-Medium'), local('Clear Sans Medium'),
+         url('../fonts/clear-sans/ClearSans-Medium.eot'),
+         url('../fonts/clear-sans/ClearSans-Medium.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/clear-sans/ClearSans-Medium.woff') format('woff'),
+         url('../fonts/clear-sans/ClearSans-Medium.ttf') format('truetype'),
+         url('../fonts/clear-sans/ClearSans-Medium.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Clear Sans';
+    font-style: italic;
+    font-weight: 500;
+    src: local('ClearSans-MediumItalic'), local('Clear Sans Medium Italic'),
+         url('../fonts/clear-sans/ClearSans-MediumItalic.eot'),
+         url('../fonts/clear-sans/ClearSans-MediumItalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/clear-sans/ClearSans-MediumItalic.woff') format('woff'),
+         url('../fonts/clear-sans/ClearSans-MediumItalic.ttf') format('truetype'),
+         url('../fonts/clear-sans/ClearSans-MediumItalic.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Clear Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: local('ClearSans-Bold'), local('Clear Sans Bold'),
+         url('../fonts/clear-sans/ClearSans-Bold.eot'),
+         url('../fonts/clear-sans/ClearSans-Bold.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/clear-sans/ClearSans-Bold.woff') format('woff'),
+         url('../fonts/clear-sans/ClearSans-Bold.ttf') format('truetype'),
+         url('../fonts/clear-sans/ClearSans-Bold.svg') format('svg');
+}
+
+@font-face {
+    font-family: 'Clear Sans';
+    font-style: italic;
+    font-weight: 700;
+    src: local('ClearSans-BoldItalic'), local('Clear Sans Bold Italic'),
+         url('../fonts/clear-sans/ClearSans-BoldItalic.eot'),
+         url('../fonts/clear-sans/ClearSans-BoldItalic.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/clear-sans/ClearSans-BoldItalic.woff') format('woff'),
+         url('../fonts/clear-sans/ClearSans-BoldItalic.ttf') format('truetype'),
+         url('../fonts/clear-sans/ClearSans-BoldItalic.svg') format('svg');
+}

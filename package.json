@@ -1,0 +1,25 @@
+{
+  "name": "jsonresume-theme-boldstatement",
+  "version": "0.1.0",
+  "description": "Make a bold statement with this JSON Resume theme.",
+  "author": "Tyler Paul Thompson",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/tptee/jsonresume-theme-bolstatement"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "handlebars": "^2.0.0-alpha.4",
+    "lodash": "^3.9.3",
+    "moment": "^2.10.3",
+    "node.normalize.scss": "^3.0.3"
+  },
+  "devDependencies": {
+    "gulp": "*",
+    "gulp-autoprefixer": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-util": "*"
+  }
+}

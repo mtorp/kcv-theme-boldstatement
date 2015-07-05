@@ -1,0 +1,93 @@
+@import 'bower_components/modular-scale/stylesheets/modular-scale';
+@import 'fonts/aileron/aileron';
+@import 'includes/underline';
+$ms-base: 16px;
+$ms-ratio: $fifth;
+
+$white: #fdfcfc;
+$red: #955251;
+$blue: #519495;
+
+* {
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	font-style: normal;
+	font-weight: normal;
+	text-rendering: optimizeLegibility;
+}
+
+body,
+html {
+	color: $white;
+	font-family: 'Aileron', sans-serif;
+	font-size: 100%;
+}
+
+a {
+	@media only screen {
+		@include underline(
+			$color-text-body: $red,
+			$color-accent: $red,
+			$color-shadow: $white
+		);
+	}
+
+	@media only print {
+		color: #000;
+		text-decoration: none;
+
+		&:visited {
+			color: #000;
+		}
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+	margin: 0;
+}
+
+h1 {
+	font-weight: 900;
+}
+
+h4,
+h5,
+h6,
+p,
+li,
+ul {
+	font-weight: 400;
+}
+
+h1 {
+	font-size: ms(3);
+	line-height: ms(4);
+}
+
+h2 {
+	font-size: ms(2);
+	line-height: ms(3);
+	font-weight: 600;
+}
+
+h3 {
+	font-size: ms(1);
+	line-height: ms(2);
+	font-weight: 600;
+}
+
+
+p, li {
+	font-size: ms(0) + 2;
+	line-height: ms(1) + 2;
+}
+
+.button {
+	font-size: 16px;
+}

@@ -1,0 +1,35 @@
+// general style variables/utility classes
+
+$dark-gray: #494542;
+$orange: #ea6a20;
+$red: darken($orange, 20%);
+$green: darken(#4ab772, 5%);
+$yellow: darken(#f4c430, 15%);
+$blue: #427ba6;
+$dark-blue: #0f1a2b;
+
+$white: #fff;
+$ivory: #ebeae7;
+$off-white: #ebeae7;
+
+@mixin absolution() {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+}
+
+.hidden {
+	display: none;
+}
+
+.serious-label {
+	color: $off-white;
+	display: inline-block;
+	font-size: 14px;
+	font-weight: 300;
+	margin-bottom: 5px;
+	text-transform: uppercase;
+}
+

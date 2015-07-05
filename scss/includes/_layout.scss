@@ -1,0 +1,315 @@
+$ms-base: 16px;
+$ms-ratio: $fifth;
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	height: 100%;
+}
+
+body {
+	background: $white;
+	color: #111;
+	height: 100%;
+
+	@media only print {
+		background: #fff;
+	}
+}
+
+.resume {
+	@include center(732px);
+	padding: 0 2rem 0 2rem;
+
+	header {
+		@include span(1);
+
+		.name {
+			@include span(1);
+			padding-bottom: 2rem;
+
+			h2 {
+				font-weight: 300;
+			}
+
+			@media only print {
+				padding-bottom: 1.5rem;
+			}
+
+			@media #{$small-only} {
+				h1 {
+					font-size: ms(2);
+					line-height: ms(3);
+				}
+
+				h2 {
+					font-size: ms(1);
+					line-height: ms(2);
+				}
+			}
+		}
+
+		.basics {
+			@include span(1);
+			padding-bottom: 2rem;
+
+			@media only print {
+				padding-bottom: 1.5rem;
+			}
+
+			@media #{$medium-up} {
+				.contact {
+					@include col(1/2);
+				}
+
+				.presence {
+					@include col(1/2);
+				}
+			}
+
+			@media #{$small-only} {
+				.contact,
+				.presence {
+					@include span(1);
+				}
+
+				.presence {
+					padding-top: 1rem;
+				}
+			}
+
+			@media only print {
+				.contact {
+					@include col(1/2);
+				}
+
+				.presence {
+					@include col(1/2);
+				}
+			}
+		}
+	}
+
+	.work {
+		@include span(1);
+
+		.item {
+			@include span(1);
+			padding-bottom: 1rem;
+
+			@media only print {
+				padding-bottom: 0.5rem;
+			}
+
+			.basics {
+				@include span(1);
+
+				@media #{$medium-up} {
+					.position {
+						display: inline-block;
+						float: left;
+					}
+
+					.name {
+						display: inline-block;
+						float: right;
+					}
+				}
+
+				@media #{$small-only} {
+					.position,
+					.name {
+						@include span(1);
+					}
+
+					.position::after {
+						content: ',';
+						display: inline;
+					}
+				}
+
+				@media only print {
+					.position {
+						display: inline-block;
+						float: left;
+					}
+
+					.name {
+						display: inline-block;
+						float: right;
+					}
+				}
+			}
+
+			.details {
+				@include span(1);
+
+				@media #{$medium-up} {
+					.date {
+						display: inline-block;
+						float: left;
+					}
+
+					.website {
+						display: inline-block;
+						float: right;
+					}
+				}
+
+				@media #{$small-only} {
+					.date,
+					.website {
+						@include span(1);
+					}
+				}
+
+				@media only print {
+					.date {
+						display: inline-block;
+						float: left;
+					}
+
+					.website {
+						display: inline-block;
+						float: right;
+					}
+				}
+			}
+
+			.summary {
+				@include span(1);
+				padding-top: 1rem;
+			}
+
+			.highlights {
+				@include span(1);
+			}
+		}
+	}
+
+	.education {
+		@include span(1);
+
+		.item {
+			@include span(1);
+			padding-bottom: 1rem;
+
+			@media only print {
+				padding-bottom: 0.5rem;
+			}
+
+			.basics {
+				@include span(1);
+
+				@media #{$medium-up} {
+					.studyType {
+						display: inline-block;
+						float: left;
+					}
+
+					.institution {
+						display: inline-block;
+						float: right;
+					}
+				}
+
+				@media #{$small-only} {
+					.studyType,
+					.institution {
+						@include span(1);
+					}
+				}
+
+				@media only print {
+					.studyType {
+						display: inline-block;
+						float: left;
+					}
+
+					.institution {
+						display: inline-block;
+						float: right;
+					}
+				}
+			}
+
+			.details {
+				@include span(1);
+
+				@media #{$medium-up} {
+					.area {
+						display: inline-block;
+						float: left;
+					}
+
+					.date {
+						display: inline-block;
+						float: right;
+					}
+				}
+
+				@media #{$small-only} {
+					.area,
+					.date {
+						@include span(1);
+					}
+				}
+
+				@media only print {
+					.area {
+						display: inline-block;
+						float: left;
+					}
+
+					.date {
+						display: inline-block;
+						float: right;
+					}
+				}
+			}
+
+			.gpa {
+				@include span(1);
+			}
+
+			.courses {
+				@include span(1);
+			}
+		}
+	}
+
+	.skills {
+		@include span(1);
+		padding-bottom: 1rem;
+
+		@media only print {
+			padding-bottom: 0.5rem;
+		}
+
+		.item {
+			@include span(1);
+
+			.name {
+				padding-bottom: 0.25rem;
+			}
+
+			.keyword {
+				background: #955251;
+				border-radius: 0.5rem;
+				color: #fff;
+				display: inline-block;
+				margin-bottom: 1rem;
+				padding: 0.5rem;
+
+				@media only print {
+					background: #444;
+					border-radius: 0.25;
+					font-size: ms(0);
+					padding: 0.35rem 0.4rem;
+				}
+			}
+		}
+	}
+}
