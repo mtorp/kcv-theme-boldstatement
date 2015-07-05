@@ -2,6 +2,7 @@
 var
 	gulp        = require('gulp'),
 	gutil       = require('gulp-util'),
+	minifyCSS   = require('gulp-minify-css'),
 	prefix      = require('gulp-autoprefixer'),
 	rename      = require('gulp-rename'),
 	sass        = require('gulp-sass'),
@@ -15,8 +16,9 @@ gulp.task('sass', function() {
 			style: 'compressed'
 		}))
 		.pipe(prefix('last 2 versions'))
-		.pipe(sourcemaps.write())
+		.pipe(minifyCSS())
 		.pipe(rename('style.css'))
+		.pipe(sourcemaps.write('./'))
 		.pipe(gulp.dest('./'));
 });
 
