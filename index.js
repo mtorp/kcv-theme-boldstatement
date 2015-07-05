@@ -1,13 +1,14 @@
 /* eslint-env node */
 'use strict';
 var fs = require('fs');
+var path = require('path');
 var Handlebars = require('handlebars');
 var moment = require('moment');
 var _ = require('lodash');
 
 var render = function(resume) {
-	var css = fs.readFileSync('./style.css', 'utf-8');
-	var tpl = fs.readFileSync('./resume.hbs', 'utf-8');
+	var css = fs.readFileSync(path.join(__dirname, 'style.css'), 'utf-8');
+	var tpl = fs.readFileSync(path.join(__dirname, 'resume.hbs'), 'utf-8');
 
 	resume.work = _(resume.work).map(function(job) {
 		job.startDate = moment(job.startDate).format('MM/DD/YYYY');
