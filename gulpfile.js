@@ -1,5 +1,6 @@
 /* jslint node: true */
 var
+	base64      = require('gulp-css-base64'),
 	gulp        = require('gulp'),
 	gutil       = require('gulp-util'),
 	minifyCSS   = require('gulp-minify-css'),
@@ -17,6 +18,7 @@ gulp.task('sass', function() {
 		}))
 		.pipe(prefix('last 2 versions'))
 		.pipe(minifyCSS())
+		.pipe(base64())
 		.pipe(rename('style.css'))
 		.pipe(sourcemaps.write('./'))
 		.pipe(gulp.dest('./'));
