@@ -10,7 +10,7 @@
   "license": "MIT",
   "dependencies": {
     "handlebars": "^2.0.0-alpha.4",
-    "lodash": "^3.9.3",
+    "lodash": "^4.0.0",
     "moment": "^2.10.3",
     "node.normalize.scss": "^3.0.3"
   },
